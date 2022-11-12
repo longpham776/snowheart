@@ -15,7 +15,7 @@ body {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background: url("https://images.alphacoders.com/504/thumb-1920-50413.jpg");
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 #snow-animation-container {

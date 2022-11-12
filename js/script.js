@@ -1,3 +1,6 @@
+
+$("#audio")[0].play();
+
 $('#heart').hide();
 
 $(document).ready(documentReady);
@@ -180,22 +183,18 @@ function documentScrollDown(event) {
 
     $(document).off("wheel");
 
-    $('#snow-animation-container').remove();
-
     $('#heart').show();
 
-    $("#audio")[0].play();
+    $('link[href="./css/style.css"]').prop("disabled", true); 
   }
 }
 
 function documentSwipeDown(event) {
   $(document).off("swipedown");
 
-  $('#snow-animation-container').remove();
-
   $('#heart').show();
 
-  $("#audio")[0].play();
+  $('link[href="./css/style.css"]').prop("disabled", true); 
 }
 
 window.requestAnimationFrame =
@@ -287,15 +286,15 @@ var init = function () {
       vx: 10,
       vy: 100,
       R: 2,
-      speed: rand() + 10,
+      speed: rand() + 5,
       q: ~~(rand() * heartPointsCount),
       D: 2 * (i % 2) - 1,
       force: 0.2 * rand() + 0.7,
       f:
         "hsla(0," +
-        ~~(40 * rand() + 60) +
+        ~~(100 * rand() + 30) +
         "%," +
-        ~~(60 * rand() + 20) +
+        ~~(300 * rand() + 10) +
         "%,.3)",
       trace: [],
     };
@@ -312,7 +311,7 @@ var init = function () {
     var n = -Math.cos(time);
     pulse((1 + n) * 0.5, (1 + n) * 0.5);
     time += (Math.sin(time) < 0 ? 9 : n > 0.8 ? 0.2 : 1) * config.timeDelta;
-    ctx.fillStyle = "rgba(255,255,255,.1)";
+    ctx.fillStyle = "rgba(0,0,0,.1)";
     ctx.fillRect(0, 0, width, height);
     for (i = e.length; i--; ) {
       var u = e[i];

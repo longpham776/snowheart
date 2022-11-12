@@ -183,6 +183,10 @@ function documentScrollDown(event) {
 
     $(document).off("wheel");
 
+    $('#snow-animation-container').remove();
+
+    $('.container').remove();
+
     $('#heart').show();
 
     $('link[href="./css/style.css"]').prop("disabled", true); 
@@ -191,6 +195,10 @@ function documentScrollDown(event) {
 
 function documentSwipeDown(event) {
   $(document).off("swipedown");
+
+  $('#snow-animation-container').remove();
+
+  $('.container').remove();
 
   $('#heart').show();
 

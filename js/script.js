@@ -285,7 +285,11 @@ var init = function () {
     var y = rand() * height;
     e[i] = {
       vx: 10,
-      vy: 150,
+<<<<<<< HEAD
+      vy: 100,
+=======
+      vy: 100,
+>>>>>>> 57157e88ff93b900c7afba2bb28aa69b7170e1cc
       R: 2,
       speed: rand() + 10,
       q: ~~(rand() * heartPointsCount),

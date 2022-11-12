@@ -225,7 +225,7 @@ window.requestAnimationFrame =
     };
   })();
 window.isDevice =
-  /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(
+  /android|webos|iphone|ipad|ipod|blackberry|samsung|iemobile|opera mini/i.test(
     (navigator.userAgent || navigator.vendor || window.opera).toLowerCase()
   );
 var loaded = false;

@@ -182,9 +182,9 @@ function documentScrollDown(event) {
 
     $('#snow-animation-container').remove();
 
-    $("#audio")[0].play();
-
     $('#heart').show();
+
+    $("#audio")[0].play();
   }
 }
 
@@ -193,9 +193,9 @@ function documentSwipeDown(event) {
 
   $('#snow-animation-container').remove();
 
-  $("#audio")[0].play();
-
   $('#heart').show();
+
+  $("#audio")[0].play();
 }
 
 window.requestAnimationFrame =
@@ -285,11 +285,7 @@ var init = function () {
     var y = rand() * height;
     e[i] = {
       vx: 10,
-<<<<<<< HEAD
       vy: 100,
-=======
-      vy: 100,
->>>>>>> 57157e88ff93b900c7afba2bb28aa69b7170e1cc
       R: 2,
       speed: rand() + 10,
       q: ~~(rand() * heartPointsCount),

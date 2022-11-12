@@ -294,7 +294,7 @@ var init = function () {
       vx: 10,
       vy: 100,
       R: 2,
-      speed: rand() + 10,
+      speed: rand() + 5,
       q: ~~(rand() * heartPointsCount),
       D: 2 * (i % 2) - 1,
       force: 0.2 * rand() + 0.7,

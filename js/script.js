@@ -1,5 +1,3 @@
-$("#audio")[0].play();
-
 $('#heart').hide();
 
 $(document).ready(documentReady);
@@ -182,12 +180,20 @@ function documentScrollDown(event) {
 
     $(document).off("wheel");
 
+    $('#snow-animation-container').remove();
+
+    $("#audio")[0].play();
+
     $('#heart').show();
   }
 }
 
 function documentSwipeDown(event) {
   $(document).off("swipedown");
+
+  $('#snow-animation-container').remove();
+
+  $("#audio")[0].play();
 
   $('#heart').show();
 }
@@ -278,10 +284,10 @@ var init = function () {
     var x = rand() * width;
     var y = rand() * height;
     e[i] = {
-      vx: 0,
-      vy: 0,
+      vx: 10,
+      vy: 150,
       R: 2,
-      speed: rand() + 3,
+      speed: rand() + 10,
       q: ~~(rand() * heartPointsCount),
       D: 2 * (i % 2) - 1,
       force: 0.2 * rand() + 0.7,
